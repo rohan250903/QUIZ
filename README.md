@@ -1,2 +1,2 @@
-# QUIZ
+# QUIZ APP
 QUIZOPIA
