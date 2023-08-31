@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="song2">
+        <source src="Kbc Clock-[AudioTrimmer.com].mp3">
+        </audio>
+        <!-- now js -->
+        <script>
+        window.addEventListener('click', () => {
+             document.getElementById("song2").play();
+        });
+        </script>
+        
+    <div class="loader-bg stop">
+        <div class="loader"></div>
+    </div>
+    <div class="index">
+        <div class="container">
+            <div class="content">
+                <h2>QuIzOpIa</h2>
+                <p>- Where Learning Is An Adeventure -</p>
+                <a class="start-btn">LETS PLAY</a>
+                <p>(Each question carry 2marks )</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="quizz-panel">
+        <div class="main">
+            <div class="main-header">
+                <div class="heading-wrapper">
+                    <h3>!! KNOWLEDGE SHOWDOWN !!</h3>
+                </div> 
+            </div>
+            <div class="main-body">
+                <div class="body-wrapper">
+                    <div class="body-header-wrapper">
+                        <h3 class="main-heading"></h3>
+                    </div>
+                    
+                    <div class="answer-wrapper">
+                        <a class="option opt1"></a>
+                        <a class="option opt2"></a>
+                        <a class="option opt3"></a>
+                        <a class="option opt4"></a>
+                    </div>
+                    <a class="btn submit-btn">Submit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="result hide-result">
+        <div class="result-wrapper">
+            <h3 class="wrapper-heading">Correct Answer</h3>
+            <p class="correct-answer"></p>
+            <h3 class="wrapper-heading">Total Score out of 30</h3>
+            <p class="total-score"></p>
+            <a class="restart">Restart</a>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
